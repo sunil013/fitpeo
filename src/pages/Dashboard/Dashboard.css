@@ -1,7 +1,7 @@
 .dashboard {
     background: var(--black-color);
     width: 100%;
-    padding: 20px 20px 30px;
+    padding: 20px 20px 40px;
     flex: 1;
     overflow-y: auto;
 }
