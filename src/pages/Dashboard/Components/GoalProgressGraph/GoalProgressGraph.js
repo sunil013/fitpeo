@@ -5,10 +5,12 @@ import { Doughnut } from "react-chartjs-2";
 import { Chart as Chart2, registerables } from "chart.js";
 import { motion } from "framer-motion";
 import { goalGraphdata, goalGraphOptions } from "../../Constants/DashboardData";
+import { IsDesktop } from "../../../../Utils/CSSUtil";
 
 Chart2.register(...registerables);
 
 const GoalProgressGraph = () => {
+  const isDesktop = IsDesktop();
   const centerTextPlugin = {
     id: "centerText",
     beforeDraw(chart) {
@@ -40,7 +42,7 @@ const GoalProgressGraph = () => {
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, delay: isDesktop ? 0 : 0.5 }}
       viewport={{ once: true }}
       className="dashboard-right-panel background-dark"
     >

@@ -39,7 +39,7 @@ const ActivityOverviewChart = () => {
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: isDesktop ? 0.5 : 0.2 }}
+      transition={{ duration: 0.5, delay: isDesktop ? 0.5 : 0.8 }}
       viewport={{ once: true }}
       className="dashboard-middle-panel background-dark"
     >

@@ -11,7 +11,7 @@ const CustomersFeedback = () => {
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: isDesktop ? 0.7 : 0.2 }}
+      transition={{ duration: 0.5, delay: isDesktop ? 0.8 : 0.2 }}
       viewport={{ once: true, amount: 0.2 }}
       className="dashboard-right-panel background-dark customers-feedback-section custom-scroll-bar"
     >

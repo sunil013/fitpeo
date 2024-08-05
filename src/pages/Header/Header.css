@@ -145,5 +145,6 @@
     }
      .header-search-input{
         height: 22px;
+        width: 100px;
      }
 }

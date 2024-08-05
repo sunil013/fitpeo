@@ -17,13 +17,19 @@ const SideDrawer = ({ open, onClose }) => {
         <div className="side-drawer-menu-container">
           <div className="side-drawer-menu">
             {sidebarMenu.map((item, i) => (
-              <button className="display-flex side-drawer-btn">
+              <button
+                onClick={onClose}
+                className="display-flex side-drawer-btn"
+              >
                 <item.Icon className="side-drawer-icn" />
                 {item.name}
               </button>
             ))}
           </div>
-          <button className="display-flex side-drawer-btn logout-btn">
+          <button
+            onClick={onClose}
+            className="display-flex side-drawer-btn logout-btn"
+          >
             <IoMdLogOut />
             Logout
           </button>
