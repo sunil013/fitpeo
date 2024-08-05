@@ -1,0 +1,4 @@
+.recent-orders-section{
+    max-height: 450px;
+        overflow-y: auto;
+}

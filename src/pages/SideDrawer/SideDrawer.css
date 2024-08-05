@@ -1,0 +1,38 @@
+.sidebar-logo {
+    color: var(--primary-color);
+    font-size: 35px;
+}
+
+.sidebar-drawer {
+    background: var(--background-color) !important;
+    color: var(--white-color-light) !important;
+}
+.sidebar-draw-container{
+    padding: 20px 15px;
+    height: 100%;
+}
+.side-drawer-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+.side-drawer-btn{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 30px 10px 0px;
+    gap: 12px;
+    font-size: 18px;
+    color: inherit;
+    cursor: pointer;
+}
+.side-drawer-icn{
+    font-size: 22px;
+}
+.side-drawer-menu-container{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

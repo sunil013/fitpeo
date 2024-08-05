@@ -1,0 +1,32 @@
+.activity-title{
+    margin-bottom:unset;
+}
+.activity-types-container{
+    justify-content: space-between;
+}
+.activity-bar-container{
+    height: 200px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.custom-select {
+    min-width: 110px;
+    border-radius: 22px;
+    background-color: var(--gray-light) !important;
+    color: var(--white-color) !important;
+}
+.select-item{
+    border-radius: 22px !important;
+    outline: none !important;
+    color: var(--white-color) !important;
+    font-size: 13px !important;
+}
+.select-item:hover{
+    outline: none !important;
+    border: none !important;
+}
+
+.custom-select .MuiSelect-icon {
+    color: var(--white-color) !important;
+}

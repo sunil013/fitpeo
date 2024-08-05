@@ -1,0 +1,10 @@
+.customers-feedback-section{
+    max-height: 450px;
+    overflow-y: auto;
+}
+.customer-feedbacks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}

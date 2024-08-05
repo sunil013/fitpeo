@@ -1,0 +1,46 @@
+.goal-graph-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+.goal-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.goal-text-name{
+    color: var(--white-color-light);
+    font-size: 13px;
+}
+.goal-text-profit{
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--white-color);
+}
+.goal-chart-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goal-chart-container span{
+    color: var(--white-color-light);
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+    .goal-text-profit{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .goal-text-profit {
+        font-size: 22px;
+    }
+    .goal-chart-container span {
+        font-size: 8px;
+    }
+}

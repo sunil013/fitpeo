@@ -1,0 +1,69 @@
+.dashboard {
+    background: var(--black-color);
+    width: 100%;
+    padding: 20px 20px 30px;
+    flex: 1;
+    overflow-y: auto;
+}
+.dashboard::-webkit-scrollbar{
+    width: 4px;
+}
+.dashboard::-webkit-scrollbar-thumb{
+    background: var(--white-color-light);
+    border-radius: 8px;
+}
+
+.dashboard-title {
+    color: var(--white-color);
+}
+.dashboard-container{
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    align-items: stretch;
+}
+.dashboard-middle-panel {
+    flex-shrink: 0;
+    flex-basis: calc(60% - 12.5px);
+    flex-grow: 1;
+}
+
+.dashboard-right-panel {
+    flex-shrink: 0;
+    flex-basis: calc(40% - 12.5px);
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1020px) {
+    .dashboard-container{
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .dashboard-middle-panel {
+        flex-basis: calc(60% - 7.5px);
+    }
+    .dashboard-right-panel {
+        flex-basis: calc(40% - 7.5px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .dashboard-container{
+        flex-direction: column;
+    }
+    .dashboard-middle-panel{
+        flex-basis: 100%;
+    }
+    .dashboard-right-panel{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard{
+        padding: 15px 15px 25px;
+    }
+    .dashboard-title{
+        font-size: 22px;
+    }
+}
